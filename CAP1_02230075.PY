@@ -1,28 +1,28 @@
-#######################
+################################
 # Sangay Penjor
 # 1. Electrical
 # 02230075
-########################
+#################################
 # REFERENCES
 # @DQ-Logo
 # @Blackbox.ai
-########################
+##################################
 # SOLUTION
 # Your Solution Score:49977
 # CSF101_CAP/input_5_cap1.txt
-########################## Read the input.txt file
+#################################### Read the input.txt file
 def read_input(Input_your_file_name): # We define a fucntion "read_input"
     a = [] # We need to create an empty list to used in opponent pick
-    with open(Input_your_file_name, 'r') as files: # For each line in the file
+    with open(Input_your_file_name, 'r') as files: # For every line in the file
         for b in files: # It will use whitespace as a delimiter to split the lines into two sections.
-            opponent_pick, output = b.split() # Create a tuple containing the two parts and append at the given list
-            a.append((opponent_pick, output)) # Create a tuple containing the values of 'opponent_picked' and 'outcome', and append it to the given list
+            opponent_pick, output = b.split() # Make a tuple with the two components, then append it to the specified list.
+            a.append((opponent_pick, output)) # The values of "opponent_picked" and "outcome" should be created as a tuple, then added to the provided list.
     return a # Return the list containing 'opponent_picked' and 'output'
 
 # Calculating the point score in each game/round
 def figureout_score(Overall_Games_Played): # it will Calculates the score based on "Overall_Games_Played"
     Points = 0 # The starting points for each round is 0
-    for opponent_pick, outcome in Overall_Games_Played: # Iterate through each game in "Overall_Games_Played"  and reveal the values of 'opposition_picked' and 'outcome'
+    for opponent_pick, outcome in Overall_Games_Played: # Iterate through each game in "Overall_Games_Played"  and reveal the values of 'opponent_picked' and 'outcome'
        
      #A mean opponent picked rock  
      #B mean opponent picked paper
